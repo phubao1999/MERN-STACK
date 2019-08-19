@@ -1,4 +1,14 @@
 h1 User List Here:
+
+
+form(action="/users/search", method="GET")
+    label Type Here To Search Value
+    br
+    input(type="text" name="q")
+    button Search
+
 ul
     each user in users
         li= user.name
+
+a(href="/") Home Page
